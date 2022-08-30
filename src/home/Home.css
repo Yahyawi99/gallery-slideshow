@@ -1,0 +1,54 @@
+.galleria-container {
+  column-count: 4;
+  padding: 30px;
+}
+
+.card {
+  width: 270px;
+  height: fit-content;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+  margin-bottom: 25px;
+}
+.card:hover {
+  opacity: 0.7;
+}
+.card p {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+}
+.card .gallery-artist {
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+.card .gallery-name {
+  bottom: 50px;
+  font-size: 2rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============ */
+/* Media Query */
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .galleria-container {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .galleria-container {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .galleria-container {
+    column-count: 3;
+  }
+}
